@@ -175,6 +175,13 @@ body{
 .projetos .container-projetos .projeto:hover .informacoes-projeto{
     opacity: 0.7;
     background-color: #000;
+}   
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px 15px;
 }
 
 .projetos .btn-mostrar-projetos{
@@ -196,6 +203,21 @@ body{
 .projetos .btn-mostrar-projetos:hover{
     background-color: #9443d8;
     transition: 0.3s;
+}
+
+.botoes .voltar li a{
+    border:1px solid #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 7px;
+    transition: 0.2s;
+}
+
+.botoes .voltar li a:hover{
+    background-color: #9443d8;
+    color: #fff;
+    border-radius: 50%;
 }
 
 .projetos .btn-mostrar-projetos.remover{
