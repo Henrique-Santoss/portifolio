@@ -202,6 +202,26 @@ body{
     display: block;
 }
 
+.rodape p{
+    background: none;
+    border-radius: 15px;
+    color: #fff;
+    width: 190px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.rodape p:hover{
+    background-color: #9443d8;
+    transition: 0.3s;
+}
+
 @keyframes gradient-animation{
     0%{
         background-position: 0% 50%;
