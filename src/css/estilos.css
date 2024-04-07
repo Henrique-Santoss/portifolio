@@ -221,7 +221,7 @@ body{
 }
 
 .projetos .btn-mostrar-projetos.remover{
-    display: block;
+    display: none;
 }
 
 .rodape p{
