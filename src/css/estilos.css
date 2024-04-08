@@ -177,13 +177,6 @@ body{
     background-color: #000;
 }   
 
-.botoes{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 30px 15px;
-}
-
 .projetos .btn-mostrar-projetos{
     background: none;
     border: 1px solid #fff;
@@ -203,6 +196,13 @@ body{
 .projetos .btn-mostrar-projetos:hover{
     background-color: #9443d8;
     transition: 0.3s;
+}
+
+.botoes .voltar{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 30px 15px;
 }
 
 .botoes .voltar li a{
