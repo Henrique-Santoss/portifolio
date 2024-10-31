@@ -16,4 +16,4 @@ JavaScript | HTML5 | Git
 Portifólio: [Clique aqui](https://henrique-santoss.github.io/portifolio/)
 <br>LinkedIn: [Clique aqui](https://www.linkedin.com/in/henrique-santos-souza/)
 
-<p>&copy Henrique-Santoss</p>
+<p>&copy Henrique-Santoss</p> 
