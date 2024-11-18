@@ -17,22 +17,23 @@
         rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
-    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="stylesheet" href="./src/css/estilos.css" media="all">
+    <link rel="stylesheet" href="./src/css/responsivo.css" media="screen">
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header class="cabecalho">
         <a href="#">
             <h1 class="logo">HS</h1>
         </a>
-        <nav class="menu">
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#competencias">Competências</a></li>
-                <li><a href="#projetos">Meus projetos</a></li>
-            </ul>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">Menu</span>
+        <nav class="itens" id="itens">
+            <a href="#">Home</a>
+            <a href="#competencias">Competências</a>
+            <a href="#projetos">Meus projetos</a>
         </nav>
     </header>
     <section class="home" id="home">
@@ -45,34 +46,38 @@
         <div class="container-foto">
             <div class="foto sombra-interna">
                 <img src="./src/imagens/foto-perfil.png" alt="foto do portifólio do Henrique">
-                <ul class="redes-sociais">
-                    <li>
-                        <a href="https://www.linkedin.com/in/henrique-santos-souza/" title="Ir para o LinkedIn" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Henrique-Santoss" title="Ir para o Github" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
             </div>
+        </div>
+        <div class="redes-sociais" id="redes-sociais">
+            <ul class="redes-sociais">
+                <li>
+                    <a href="https://www.linkedin.com/in/henrique-santos-souza/" title="Ir para o LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Henrique-Santoss" title="Ir para o Github" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
         <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">⬆</button>
     </section>
     <section class="competencias" id="competencias">
         <h2 class="titulo">Competências</h2>
-        <div>
-            <img alt="Js" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-            <img alt="Python" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-            <img alt="C#" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
-            <img alt="PHP" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
-            <img alt="MySQL" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
-            <img alt="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-            <img alt="CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-            <img alt="Git" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
-            <img alt="GitHub" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg">
+        <div class="container-competencias">
+            <div class="tecnologias">
+                <img alt="Js" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                <img alt="Python" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+                <img alt="C#" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
+                <img alt="PHP" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
+                <img alt="MySQL" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
+                <img alt="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                <img alt="CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                <img alt="Git" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
+                <img alt="GitHub" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg">
+            </div>
         </div>
     </section>
     <section class="projetos" id="projetos">
@@ -84,8 +89,10 @@
                 <div class="informacoes-projeto">
                     <p>Site criado utilizando HTML, CSS, Mobile First, Media Queries e Formulário.</p>
                 </div>
-                <a href="https://henrique-santoss.github.io/projeto-login/" target="_blank">Ver Projeto</a>
-                <a href="https://github.com/Henrique-Santoss/projeto-login" target="_blank">&lt; Repositório /&gt;</a>
+                <aside class="btn-link">
+                    <a href="https://henrique-santoss.github.io/projeto-login/" target="_blank" class="ver-projeto">Ver Projeto</a>
+                    <a href="https://github.com/Henrique-Santoss/projeto-login" target="_blank" class="rep">&lt; Repositório /&gt;</a>
+                </aside>
             </div>
             <div class="projeto ativo">
                 <img src="src/imagens/projeto-social.jpg" alt="capa do projeto">
@@ -93,8 +100,10 @@
                 <div class="informacoes-projeto">
                     <p>Site criado utilizando HTML, CSS, iframe e responsivo.</p>
                 </div>
-                <a href="https://henrique-santoss.github.io/projeto-social/" target="_blank">Ver Projeto</a>
-                <a href="https://github.com/Henrique-Santoss/projeto-social" target="_blank">&lt; Repositório /&gt;</a>
+                <aside class="btn-link">
+                    <a href="https://henrique-santoss.github.io/projeto-social/" target="_blank" class="ver-projeto">Ver Projeto</a>
+                    <a href="https://github.com/Henrique-Santoss/projeto-social" target="_blank" class="rep">&lt; Repositório /&gt;</a>
+                </aside>
             </div>
             <div class="projeto ativo">
                 <img src="src/imagens/cordel-moderno.jpg" alt="capa do projeto">
@@ -102,8 +111,10 @@
                 <div class="informacoes-projeto">
                     <p>Site criado utilizando HTML, CSS, responsivo e com efeito Parallax.</p>
                 </div>
-                <a href="https://henrique-santoss.github.io/cordel-moderno/" target="_blank">Ver Projeto</a>
-                <a href="https://github.com/Henrique-Santoss/cordel-moderno" target="_blank">&lt; Repositório /&gt;</a>
+                <aside class="btn-link">
+                    <a href="https://henrique-santoss.github.io/cordel-moderno/" target="_blank" class="ver-projeto">Ver Projeto</a>
+                    <a href="https://github.com/Henrique-Santoss/cordel-moderno" target="_blank" class="rep">&lt; Repositório /&gt;</a>
+                </aside>
             </div>
             <div class="projeto ativo">
                 <img src="src/imagens/historia-do-android.jpg" alt="capa do projeto">
@@ -112,8 +123,10 @@
                     <p>Site criado utilizando HTML, CSS e responsivo</p>
                     <p>🔗 Acesse no Github Pages</p>
                 </div>
-                <a href="https://henrique-santoss.github.io/historia-do-android/" target="_blank">Ver Projeto</a>
-                <a href="https://github.com/Henrique-Santoss/historia-do-android" target="_blank">&lt; Repositório /&gt;</a>
+                <aside class="btn-link">
+                    <a href="https://henrique-santoss.github.io/historia-do-android/" target="_blank" class="ver-projeto">Ver Projeto</a>
+                    <a href="https://github.com/Henrique-Santoss/historia-do-android" target="_blank" class="rep">&lt; Repositório /&gt;</a>
+                </aside>
             </div>
             <div class="projeto">
                 <a href="#" target="_blank">

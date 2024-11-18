@@ -42,8 +42,22 @@ function topFunction(){
     document.documentElement.scrollTop = 0; // Para Chrome, FireFox, IE e Opera
 }
 
-// Quando o usuário clicar no menu irá aparecer o que estava oculto
+// Quando o tamanho da janela for maior que 769 os itens aparecem
 
-document.getElementById("menu").onclick = function(){
-    document.getElementById("nav-links").classList.toggle("active");
+function mudouTamanho(){
+    if (window.innerWidth >= 769){
+        itens.style.display = "flex";
+    } else{
+        itens.style.display = "none";
+    }
+}
+
+// Quando usuário clicar no Menu os items iram aparecem
+
+function clickMenu(){
+    if(itens.style.display == "flex"){
+        itens.style.display = "none";
+    } else {
+        itens.style.display = "flex";
+    }
 }

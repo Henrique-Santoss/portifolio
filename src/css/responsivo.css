@@ -1,4 +1,18 @@
-@media(max-width: 1280px){
+@charset "UTF-8";
+
+/*  Typical Device Breakpoints em 2024
+    Pequenas Telas: até 600px
+    Celular: de 600px até 768px
+    Tablet: de 769px até 992px
+    Desktop: de 993px até 1200px
+    Grandes Telas: maiores de 1201px
+*/
+
+/*
+    Media Queries para outros dispositivos
+*/
+
+@media (max-width: 1280px){
     .cabecalho{
         padding: 30px;
     }
@@ -37,5 +51,51 @@
 
     .projetos{
         padding: 30px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){ /* Tablet */
+    .cabecalho{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    span#burguer{
+        display: none;
+    }
+
+    .cabecalho .itens{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .cabecalho .itens a{
+        flex: 0 1 150px;
+    }
+}
+
+@media(min-width: 993px) { /* Telas Grandes */
+    .cabecalho{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    span#burguer{
+        display: none;
+    }
+
+    .cabecalho .itens{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .cabecalho .itens a{
+        flex: 0 1 150px;
     }
 }
