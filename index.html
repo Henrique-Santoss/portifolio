@@ -28,80 +28,92 @@
             <h1 class="logo">HS</h1>
         </a>
         <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#projetos">Meus projetos</a>
-                </li>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#competencias">Competências</a></li>
+                <li><a href="#projetos">Meus projetos</a></li>
             </ul>
         </nav>
     </header>
     <section class="home" id="home">
         <div class="informacoes">
-            <h1>Olá, Sou Henrique Santos.</h1>
+            <h1>Olá, eu sou Henrique Santos.</h1>
             <p>Um desenvolver web em formação apaixonado por tecnologia. </p>
             <p>Estou sempre me desafiando com novos projetos e buscando feedback na comunidade de programação, além de compartilhar meus conhecimentos. 👍</p>
             <p>Ah, também sou fã de jogos, séries e mangás.</p>
-            <ul class="redes-sociais">
-                <li>
-                    <a href="https://www.linkedin.com/in/henrique-santos-souza/" title="Ir para o LinkedIn" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/Henrique-Santoss" title="Ir para o Github" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
         </div>
         <div class="container-foto">
             <div class="foto sombra-interna">
                 <img src="./src/imagens/foto-perfil.png" alt="foto do portifólio do Henrique">
+                <ul class="redes-sociais">
+                    <li>
+                        <a href="https://www.linkedin.com/in/henrique-santos-souza/" title="Ir para o LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Henrique-Santoss" title="Ir para o Github" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
+        </div>
+        <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">⬆</button>
+    </section>
+    <section class="competencias" id="competencias">
+        <h2 class="titulo">Competências</h2>
+        <div>
+            <img alt="Js" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+            <img alt="Python" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+            <img alt="C#" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
+            <img alt="PHP" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
+            <img alt="MySQL" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
+            <img alt="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+            <img alt="CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+            <img alt="Git" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
+            <img alt="GitHub" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg">
         </div>
     </section>
     <section class="projetos" id="projetos">
         <h2 class="titulo">Meus projetos</h2>
         <div class="container-projetos">
             <div class="projeto ativo">
-                <a href="https://henrique-santoss.github.io/projeto-login/" target="_blank">
-                    <img src="src/imagens/projeto-login.jpg" alt="capa do projeto">
-                    <h3>Projeto Login</h3>
-                    <div class="informacoes-projeto">
-                        <p>Site criado utilizando HTML, CSS, Mobile First, Media Queries e Formulário.</p>
-                        <p>🔗 Acesse no Github Pages</p>
-                    </div>
-                </a>
+                <img src="src/imagens/projeto-login.jpg" alt="capa do projeto">
+                <h3>Projeto Login</h3>
+                <div class="informacoes-projeto">
+                    <p>Site criado utilizando HTML, CSS, Mobile First, Media Queries e Formulário.</p>
+                </div>
+                <a href="https://henrique-santoss.github.io/projeto-login/" target="_blank">Ver Projeto</a>
+                <a href="https://github.com/Henrique-Santoss/projeto-login" target="_blank">&lt; Repositório /&gt;</a>
             </div>
             <div class="projeto ativo">
-                <a href="https://henrique-santoss.github.io/projeto-social/" target="_blank">
-                    <img src="src/imagens/projeto-social.jpg" alt="capa do projeto">
-                    <h3>Projeto Social</h3>
-                    <div class="informacoes-projeto">
-                        <p>Site criado utilizando HTML, CSS, iframe e responsivo.</p>
-                        <p>🔗 Acesse no Github Pages</p>
-                    </div>
-                </a>
+                <img src="src/imagens/projeto-social.jpg" alt="capa do projeto">
+                <h3>Projeto Social</h3>
+                <div class="informacoes-projeto">
+                    <p>Site criado utilizando HTML, CSS, iframe e responsivo.</p>
+                </div>
+                <a href="https://henrique-santoss.github.io/projeto-social/" target="_blank">Ver Projeto</a>
+                <a href="https://github.com/Henrique-Santoss/projeto-social" target="_blank">&lt; Repositório /&gt;</a>
             </div>
             <div class="projeto ativo">
-                <a href="https://henrique-santoss.github.io/cordel-moderno/" target="_blank">
-                    <img src="src/imagens/cordel-moderno.jpg" alt="capa do projeto">
-                    <h3>Cordel Moderno</h3>
-                    <div class="informacoes-projeto">
-                        <p>Site criado utilizando HTML, CSS, responsivo e com efeito Parallax.</p>
-                        <p>🔗 Acesse no Github Pages</p>
-                    </div>
-                </a>
+                <img src="src/imagens/cordel-moderno.jpg" alt="capa do projeto">
+                <h3>Cordel Moderno</h3>
+                <div class="informacoes-projeto">
+                    <p>Site criado utilizando HTML, CSS, responsivo e com efeito Parallax.</p>
+                </div>
+                <a href="https://henrique-santoss.github.io/cordel-moderno/" target="_blank">Ver Projeto</a>
+                <a href="https://github.com/Henrique-Santoss/cordel-moderno" target="_blank">&lt; Repositório /&gt;</a>
             </div>
             <div class="projeto ativo">
-                <a href="https://henrique-santoss.github.io/historia-do-android/" target="_blank">
-                    <img src="src/imagens/historia-do-android.jpg" alt="capa do projeto">
-                    <h3>História do Android</h3>
-                    <div class="informacoes-projeto">
-                        <p>Site criado utilizando HTML, CSS e responsivo</p>
-                        <p>🔗 Acesse no Github Pages</p>
-                    </div>
-                </a>
+                <img src="src/imagens/historia-do-android.jpg" alt="capa do projeto">
+                <h3>História do Android</h3>
+                <div class="informacoes-projeto">
+                    <p>Site criado utilizando HTML, CSS e responsivo</p>
+                    <p>🔗 Acesse no Github Pages</p>
+                </div>
+                <a href="https://henrique-santoss.github.io/historia-do-android/" target="_blank">Ver Projeto</a>
+                <a href="https://github.com/Henrique-Santoss/historia-do-android" target="_blank">&lt; Repositório /&gt;</a>
             </div>
             <div class="projeto">
                 <a href="#" target="_blank">
