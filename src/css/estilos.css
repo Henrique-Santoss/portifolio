@@ -78,6 +78,7 @@ header > nav{
     width: 300px;
 
     flex: 1 0 auto;
+    align-self: center;
 }
 
 .cabecalho .itens a:hover{
@@ -186,7 +187,7 @@ header > nav{
     cursor: pointer; /* Indica que é clicável */ 
     padding: 15px; /* Espaçamento interno */ 
     border-radius: 50%; /* Bordas arredondadas */ 
-    font-size: 18px; /* Tamanho do texto */
+    font-size: 30px; /* Tamanho do texto */
 }
 
 #topBtn:hover { 
@@ -218,6 +219,7 @@ header > nav{
     max-height: 500px;
     position: relative;
     display: none;
+    margin-bottom: 50px;
 }
 
 .projetos .projeto.ativo{
@@ -256,7 +258,11 @@ header > nav{
 }   
 
 .btn-link{
-    padding: 2px;
+    padding:2px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .ver-projeto{
@@ -265,6 +271,8 @@ header > nav{
     padding: 10px;
     text-align: center;
     transition: background-color 0.5s;
+
+    flex: 0 0 110px;
 }
 
 .ver-projeto:hover{
@@ -279,6 +287,8 @@ header > nav{
     padding: 10px;
     text-align: center;
     transition: background-color 0.5s;
+
+    flex: 0 1 150px;
 }
 
 .rep:hover{
